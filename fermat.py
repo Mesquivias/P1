@@ -16,7 +16,7 @@ def mod_exp(x, y, N):
     # Then initialize variable z from Figure 1.4
     # The book version was not recognizing my inputs as integers
     # So I struggled a bit on this part
-    # I believe that this is O(logn)
+    # I believe that this is O(logn) due to class discussion and using recursion
     if (y % 2) == 0:
         z = mod_exp(x, (y / 2), N)
         return (z * z) % N
